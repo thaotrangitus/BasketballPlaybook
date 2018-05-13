@@ -13,7 +13,7 @@
 
         @*<div data-bind="template: 'tagsTempl'"></div>*@
         <ul data-bind="foreach: tags">
-            <li class="tagItem">
+            <li class="tagItem" data-bind="click: $parent.selectTag">
                 <span data-bind="text: Name"></span>
                 <div>
                     <a href="#" class="tag-edit">Edit</a>

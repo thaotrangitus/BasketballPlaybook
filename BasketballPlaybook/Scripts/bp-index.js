@@ -19,6 +19,11 @@
         addTag: function () {
             this.tags.push({ Name: this.tagToAdd() });
             this.tagToAdd("");
+        },
+
+        selectTag: function () {
+            console.log("inside selectTag");
+            viewModel.selectTag(this);
         }
     };
 
